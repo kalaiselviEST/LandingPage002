@@ -1,0 +1,265 @@
+
+.container#home{
+    position: relative;
+    height: 100vh;
+    background-color: var(--primary);
+}
+.container#home header {
+    padding: 1.8rem 3rem;
+    min-height: 80px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+.container#home header nav{
+    display: flex;
+    align-items: center;
+}
+.container#home header nav .logo {
+    font-size: 4.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    float: left;
+}
+.container#home header nav .toggler-icon {
+    display: none;
+}
+.container#home header nav .menu-nav {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    vertical-align: middle;
+    line-height: 80px;
+    justify-content: center;
+    width: 100%;
+    z-index: 15;
+}
+
+.container#home header nav .menu-nav li a {
+    padding: 10px 25px 0px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+    font-size: 23px;
+}
+.container#home .hero-header{
+    margin-bottom: 6rem;
+    padding: 16rem 0 0 0;
+    background: url(../img/bg-circle.png), url(../img/bg-triangle.png), linear-gradient(to bottom right, var(--primary), var(--secondary));
+    background-position: left 0px top 0px, right 0px top 50%, center bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+.container#home .hero-header .row {
+    padding: 4rem 0rem;
+}
+.container#home .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container#home .hero-header .hero-text{
+  
+    max-width: 75%;
+}
+.container#home .hero-header .hero-text h1 {
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+    font-size: 5rem;
+    line-height:70px;
+}
+.container#home .hero-header .hero-text p {
+    color: #fff;
+    font-family: 'Heebo', sans-serif;
+    font-size: 2.1rem;
+    padding: 2rem 12rem 2rem 0rem;
+    line-height: 30px;
+}
+
+
+.screenshot-carousel{
+    position: relative;
+    width: 253px;
+    height: 500px;
+    padding: 15px;
+    margin-right: 30px;
+}
+.screenshot-carousel::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(../img/screenshot-frame.png) center center no-repeat;
+    background-size: 253px 500px;
+    z-index: 1;
+}
+.screenshot-carousel img {
+    position: relative;
+    width: 223px;
+    height: 470px;
+}
+
+.screenshot-carousel .owl-dots {
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.screenshot-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 5px 0;
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    border-radius: 15px;
+    transition: .5s;
+}
+
+.screenshot-carousel .owl-dot::after {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    top: 5px;
+    left: 5px;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.screenshot-carousel .owl-dot.active {
+    box-shadow: 0 0 10px var(--dark);
+}
+
+@media (min-width:320px) and (max-width : 992px) {
+    .row {
+        max-width: 100%;
+     
+    }
+    button{
+        padding: 1.5rem 4rem;
+        font-size: 16px;
+        margin-right: 30px;
+    }
+    .container#home header {
+        padding: 0.6rem 1.5rem;
+        min-height: 40px;
+        background-color: #fff;
+   }
+    .container#home header nav {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+   }
+   
+    .container#home header nav .logo-section {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0.4rem 0rem;
+   }
+    .container#home header nav .toggler-icon {
+        display: inline-block;
+        color: rgb(85, 84, 84);
+        font-size: 3rem;
+        margin-left: auto;
+   }
+    .container#home header nav .logo {
+        font-size: 3.5rem;
+        background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+   }
+    .container#home header nav .menu-nav {
+      
+        flex-direction: column;
+        transition:  height 1.5s ease-in;
+        line-height: 50px;
+        margin: 0 ;
+        border-top: 1px solid rgb(209, 208, 208);
+        max-height: 0;
+        transition: max-height 0.5s ease-out;
+        overflow: hidden;
+
+   }
+   .container#home header nav .menu-nav.open-nav {
+      
+       
+     
+        max-height: 600px;
+        transition: max-height 0.5s ease-in;
+    }
+  
+
+    .container#home header nav .menu-nav li a {
+        padding: 5px 0px 0px;
+        text-decoration: none;
+        color: rgb(98, 92, 92);
+        font-family: 'Jost', sans-serif;
+        font-size: 1.9rem;
+   }
+   .container#home header nav   button{
+        display: none;
+   }
+  
+    .container#home .hero-header{
+        margin-bottom: 0rem;
+        padding: 5rem 0 0 0;
+        text-align: center;
+   }
+   .container#home .hero-section {
+  flex-direction: column;
+}
+
+
+   .container#home .hero-header .hero-text{
+    padding: 30px 0px 50px;
+    max-width: 90%;
+}
+    .container#home .hero-header .hero-text h1 {
+        font-size: 3rem;
+        line-height:40px;
+   }
+    .container#home .hero-header .hero-text p {
+        font-size: 1.9rem;
+        text-align: center;
+        padding: 2rem 2rem 2rem 0rem;
+   }
+
+
+}
+@media (min-width:993px) and (max-width:1200px) {
+    .row {
+        max-width: 85%;
+     
+    }
+    .container#home header nav .menu-nav li a {
+        padding: 10px 20px 0px;
+   }
+    button {
+        
+        padding: 2rem 4rem;
+        font-size: 2rem;
+   }
+   .container#home .hero-header .hero-text h1{
+    font-size: 3.6rem;
+    line-height: 50px;
+   }
+}
+
+@media (min-width:1400px) {
+    .row{
+        max-width: 75%;
+    }
+}
