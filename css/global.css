@@ -43,4 +43,5 @@ button {
 .row {
     max-width: 80%;
     margin: 0 auto;
+    padding: 7em 0;
 }
