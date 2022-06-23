@@ -264,9 +264,13 @@
         font-size: 2em;
     }
     .item h1{
-        font-size: 3em;
+        font-size: 2em;
         font-family: "Jost" , sans-serif;
     }
+    .item p {
+        font-size: 1.3rem;
+    }
+       
    .container#about .about-content {
     flex-direction: column;
     }
@@ -275,6 +279,10 @@
     }
     .container#about .about-content .count-section {     
         width: 100%;
+    }
+    .container#about .about-content .count-section .item-count .bx {
+        font-size: 3em;
+     
     }
     .container#about .about-content button{
        text-align: center;
