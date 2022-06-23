@@ -45,3 +45,17 @@ button {
     margin: 0 auto;
     padding: 7em 0;
 }
+.text-center{
+    text-align: center;
+}
+h4.small-text{
+    font-size: 2.5em;
+    font-family: "Jost" , sans-serif;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+}
+h1.title-text
+{
+    font-size: 4.5em;
+    font-family: "Jost" , sans-serif;
+}
