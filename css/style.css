@@ -187,7 +187,7 @@
     vertical-align: middle;
 }
 .features-content .grid-item .icon-circle .bx {
-    font-size: 40px;
+    font-size: 35px;
     color: #fff;
 }
 .features-content .grid-item h3 {
@@ -201,6 +201,102 @@
     color: #919294;
     font-size: 20px;
     line-height: 30px;
+}
+.pricing-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 16em 0em;
+   
+}
+.plan-chooser , .plan-chooser ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0em;
+   
+}
+.plan-chooser ul {
+    border: 1px solid var(--secondary);
+    border-radius:3em;
+}
+.plan-chooser , .plan-chooser ul button {
+    padding: 1em 1.5em;
+    font-size: 18px;
+    color: #000;
+    background: #fff;
+    font-family: "Heebo", sans-serif;
+ 
+}
+.plan-chooser ul button.active {
+    color: #fff;
+    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+}
+ .plan-chooser ul li:nth-child(1) button {
+    display: inline-block;
+    margin: 0;
+    border-radius: 30px 0px 0px 30px ;
+}
+.plan-chooser ul li:nth-child(2) button {
+    display: inline-block;
+    margin: 0;
+    border-radius: 0px 30px 30px 0px;
+   
+}
+.pricing-container .price-item{
+    background-color: #F0F6FF !important;
+    border-radius: 10px !important;
+    padding: 3em 0em;
+    margin: 0em 1em;
+}
+ 
+.pricing-container .price-item  h1.plan-name {
+   font-family: "Jost" sans-serif;
+    font-size: 2.4em;
+    margin-bottom: 0.6em;
+}
+.pricing-container .price-item .caption-text{
+    color: #919294;
+    font-family: "Heebo" , sans-serif;
+    font-size: 15px;
+    word-spacing:5px;
+}
+.pricing-container .price-item .price-value {
+    font-size: 3.6em !important;
+    color: #262b47;
+    font-family: "Jost", sans-serif;
+}
+.pricing-container .price-item .price-header{
+    padding: 1.8em 2.3em;
+    border-bottom: 1px solid #dee2e6 ;
+}
+.pricing-container .price-item .price-body{
+    padding: 1.8em 2.3em;
+}
+.pricing-container .price-item .price-value span {
+    font-size: 0.6em;
+}
+.pricing-container .price-item .pricing-features {
+    padding: 2.3em 0em 0em;
+}
+.pricing-container .price-item .pricing-feature-item{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.pricing-container .price-item .pricing-feature-item p {
+font-size: 18px;
+color: #919294;
+font-family: "Heebo" , sans-serif;
+display: block;
+}
+.pricing-container .price-item .pricing-feature-item .bx {
+    font-size: 2em;
+    float: right;
+}
+.pricing-container .price-item button {
+    padding: 1em 2em;
+    font-size: 16px;
+    margin: 1em 0em;
 }
 @media (min-width:320px) and (max-width : 992px) {
     .row {
@@ -332,6 +428,13 @@
 }
 .features-content .grid-item p {
     font-size: 18px;
+}
+.pricing-container {
+    grid-template-columns: 1fr;
+    padding: 2em 0em;
+}
+.pricing-container .price-item {
+    margin: 1em 0em;
 }
 }
 @media (min-width:993px) and (max-width:1200px) {
